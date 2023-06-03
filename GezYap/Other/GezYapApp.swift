@@ -11,7 +11,7 @@ import SwiftUI
 struct GezYapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CityListView()
         }
     }
 }

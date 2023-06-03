@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660995B42A2BB04D00173196 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660995B32A2BB04D00173196 /* CityViewModel.swift */; };
 		6682F3CF2A2B7CA3006A783F /* GezYapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3CE2A2B7CA3006A783F /* GezYapApp.swift */; };
-		6682F3D12A2B7CA3006A783F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3D02A2B7CA3006A783F /* ContentView.swift */; };
 		6682F3D32A2B7CA4006A783F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682F3D22A2B7CA4006A783F /* Assets.xcassets */; };
 		6682F3D62A2B7CA4006A783F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682F3D52A2B7CA4006A783F /* Preview Assets.xcassets */; };
+		6682F3E12A2B7D65006A783F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3E02A2B7D65006A783F /* City.swift */; };
+		6682F3E32A2B7D8B006A783F /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3E22A2B7D8B006A783F /* CityListView.swift */; };
+		6682F3E52A2B7DB8006A783F /* CityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3E42A2B7DB8006A783F /* CityDetailsView.swift */; };
+		6682F3E82A2B8C17006A783F /* CityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682F3E72A2B8C17006A783F /* CityRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660995B32A2BB04D00173196 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		6682F3CB2A2B7CA2006A783F /* GezYap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GezYap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6682F3CE2A2B7CA3006A783F /* GezYapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GezYapApp.swift; sourceTree = "<group>"; };
-		6682F3D02A2B7CA3006A783F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6682F3D22A2B7CA4006A783F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6682F3D52A2B7CA4006A783F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6682F3E02A2B7D65006A783F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6682F3E22A2B7D8B006A783F /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
+		6682F3E42A2B7DB8006A783F /* CityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsView.swift; sourceTree = "<group>"; };
+		6682F3E72A2B8C17006A783F /* CityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660995B22A2BB03F00173196 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				660995B32A2BB04D00173196 /* CityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		6682F3C22A2B7CA2006A783F = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +67,12 @@
 		6682F3CD2A2B7CA2006A783F /* GezYap */ = {
 			isa = PBXGroup;
 			children = (
-				6682F3CE2A2B7CA3006A783F /* GezYapApp.swift */,
-				6682F3D02A2B7CA3006A783F /* ContentView.swift */,
-				6682F3D22A2B7CA4006A783F /* Assets.xcassets */,
-				6682F3D42A2B7CA4006A783F /* Preview Content */,
+				660995B22A2BB03F00173196 /* ViewModels */,
+				6682F3E62A2B8C07006A783F /* Components */,
+				6682F3DF2A2B7D4A006A783F /* Other */,
+				6682F3DE2A2B7D43006A783F /* Views */,
+				6682F3DD2A2B7D3E006A783F /* Utils */,
+				6682F3DC2A2B7D3C006A783F /* Models */,
 			);
 			path = GezYap;
 			sourceTree = "<group>";
@@ -65,6 +83,48 @@
 				6682F3D52A2B7CA4006A783F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6682F3DC2A2B7D3C006A783F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6682F3E02A2B7D65006A783F /* City.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6682F3DD2A2B7D3E006A783F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6682F3DE2A2B7D43006A783F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6682F3E22A2B7D8B006A783F /* CityListView.swift */,
+				6682F3E42A2B7DB8006A783F /* CityDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6682F3DF2A2B7D4A006A783F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6682F3D42A2B7CA4006A783F /* Preview Content */,
+				6682F3CE2A2B7CA3006A783F /* GezYapApp.swift */,
+				6682F3D22A2B7CA4006A783F /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6682F3E62A2B8C07006A783F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6682F3E72A2B8C17006A783F /* CityRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6682F3D12A2B7CA3006A783F /* ContentView.swift in Sources */,
+				6682F3E32A2B7D8B006A783F /* CityListView.swift in Sources */,
+				660995B42A2BB04D00173196 /* CityViewModel.swift in Sources */,
 				6682F3CF2A2B7CA3006A783F /* GezYapApp.swift in Sources */,
+				6682F3E52A2B7DB8006A783F /* CityDetailsView.swift in Sources */,
+				6682F3E12A2B7D65006A783F /* City.swift in Sources */,
+				6682F3E82A2B8C17006A783F /* CityRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GezYap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GezYap/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CRNJ953YN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GezYap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GezYap/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 7CRNJ953YN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
